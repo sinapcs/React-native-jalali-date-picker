@@ -14,9 +14,9 @@ const {
   StyleSheet,
 } = require('react-native');
 
-const scale = Dimensions.get('window').width / 375;
+const scale = Dimensions.get('window').width / 450;
 
-function normalize(size: number): number {
+function normalize(size) {
   return Math.round(scale * size);
 }
 
@@ -47,11 +47,10 @@ const styles = StyleSheet.create({
     color: '#000',
     marginTop: normalize(6),
     alignSelf: 'center',
-    fontFamily: 'IS'
   },
 
   dayLabelsWrapper: {
-    flexDirection: 'row-reverse',
+    flexDirection: 'row',
     marginBottom: normalize(10),
     borderBottomWidth: 1,
     borderTopWidth: 1,
@@ -66,9 +65,8 @@ const styles = StyleSheet.create({
   },
   dayLabels: {
     width: normalize(50),
-    fontSize: normalize(10),
+    fontSize: normalize(15),
     color: '#000',
-    fontFamily: 'IS_Light',
     textAlign: 'center',
   },
   selectedDay: {
@@ -82,7 +80,6 @@ const styles = StyleSheet.create({
   monthLabel: {
     fontSize: normalize(16),
     color: '#000',
-    fontFamily: 'IS_Light',
     width: normalize(180),
     textAlign: 'center',
   },
@@ -101,18 +98,15 @@ const styles = StyleSheet.create({
   prev: {
     textAlign: 'left',
     fontSize: normalize(14),
-    fontFamily: 'IS_Light',
   },
   next: {
     textAlign: 'right',
     fontSize: normalize(14),
-    fontFamily: 'IS_Light',
   },
   yearLabel: {
     fontSize: normalize(14),
     fontWeight: 'bold',
     color: '#000',
-    fontFamily: 'IS_Light',
     textAlign: 'center',
   },
   weeks: {

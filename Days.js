@@ -92,13 +92,16 @@ class Days extends React.Component {
       year = this.props.year,
       currentDay = 0,
       thisMonthFirstDay = moment(year + '/' + (month + 1) + '/1', 'jYYYY/jM/jD'),
-      dayOfWeek = (thisMonthFirstDay.weekday() - 1) % 7,
+      dayOfWeek = (thisMonthFirstDay.weekday() + 1) % 7,
       slotsAccumulator = 0;
 
     for (let i = 0; i < MAX_ROWS; i++ ) { // Week rows
       columns = [];
 
-      for (let j = 0; j < MAX_COLUMNS; j++) { // Day columns
+      for (let j = 0; j < MAX_COLUMNS; j++) {
+
+        // Day columns
+
         if (slotsAccumulator >= dayOfWeek) {
           if (currentDay < moment.jDaysInMonth(year, month)) {
             columns.push(<Day
@@ -132,7 +135,7 @@ class Days extends React.Component {
         slotsAccumulator++;
       }
       matrix[i] = [];
-      columns.reverse();
+      // columns.reverse();
       matrix[i].push(<View key={i} style={styles.weekRow}>{columns}</View>);
     }
 

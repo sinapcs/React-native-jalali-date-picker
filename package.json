@@ -1,15 +1,38 @@
 {
-  "name": "react-native-jalali-date-picker",
-  "version": "1.0.0",
+  "_from": "react-native-jalali-date-picker",
+  "_id": "react-native-jalali-date-picker@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-9zAAbbtmPsN2d8I81WTu8L9W6AA=",
+  "_location": "/react-native-jalali-date-picker",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-jalali-date-picker",
+    "name": "react-native-jalali-date-picker",
+    "escapedName": "react-native-jalali-date-picker",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-jalali-date-picker/-/react-native-jalali-date-picker-1.0.0.tgz",
+  "_shasum": "f730006dbb663ec37677c23cd564eef0bf56e800",
+  "_spec": "react-native-jalali-date-picker",
+  "_where": "/Users/sina/Desktop/SharGroup",
+  "author": {
+    "name": "Mohammad Goldast, Reza Ghorbani"
+  },
+  "bugs": {
+    "url": "https://github.com/blackhair/React-native-jalali-datepicker/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "A simple and clean datepicker",
-  "main": "Day.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/blackhair/React-native-jalali-datepicker.git"
-  },
+  "homepage": "https://github.com/blackhair/React-native-jalali-datepicker#readme",
   "keywords": [
     "DatePicker",
     "Jalali",
@@ -17,10 +40,15 @@
     "Shamsi",
     "Datepicker"
   ],
-  "author": "Mohammad Goldast, Reza Ghorbani",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/blackhair/React-native-jalali-datepicker/issues"
+  "main": "Day.js",
+  "name": "react-native-jalali-date-picker",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackhair/React-native-jalali-datepicker.git"
   },
-  "homepage": "https://github.com/blackhair/React-native-jalali-datepicker#readme"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
 }

@@ -47,7 +47,7 @@ class Day extends React.Component {
 
   render() {
     let textStyle = this.props.textStyle;
-    
+
     if (this.props.selected) {
       const now = this.props.date._i.replace(/-/g, '').replace('//', '');
       if (Number(now) > Number(this.props.prevDays)) {
@@ -67,7 +67,7 @@ class Day extends React.Component {
             </View>
           </View>
         );
-      }else { 
+      }else {
         return (
           <View style={styles.dayWrapper}>
             <Text style={[styles.dayLabel, textStyle, styles.disabledTextColor]}>
@@ -76,7 +76,7 @@ class Day extends React.Component {
           </View>
         );
       }
-      
+
     } else {
       if (this.props.date < this.props.minDate || this.props.date > this.props.maxDate) {
         return (
